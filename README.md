@@ -1,5 +1,7 @@
 # vize-from-prop-template-repro
 
+Reported as [ubugeeei-prod/vize#10661](https://github.com/ubugeeei-prod/vize/issues/10661).
+
 Minimal reproduction for a false type error in [vize](https://github.com/ubugeeei-prod/vize)'s content mapper.
 
 When a prop named `from` is read in the template, the generated code declares it as `_from` but later references it as `from`. This reports TS2552.
